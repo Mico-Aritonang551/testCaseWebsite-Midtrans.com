@@ -1,0 +1,26 @@
+{
+  "name": "midtrans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefenition": false,
+    "stepDefinitions": "**/stepDef/*.js",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}
